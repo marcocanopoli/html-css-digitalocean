@@ -4,7 +4,7 @@ body {
 }
 
 h1, .h1 {
-    font-size: 6.5rem;
+    font-size: 3.75rem;
     font-weight: 700;
 }
 
@@ -73,13 +73,13 @@ p {
 #my_logo_box img {
     height: 30px;
     margin-right: 60px;
-    transform: translateY(18%);
+    transform: translateY(-15%);
 }
 
 /* hero/jumbotron */
 .my_hero {
-    background: url("../img/bg-banner-home.jpg") no-repeat center center;
-    background-size: 100%;
+    background: url("../img/bg-banner-home.jpg") no-repeat center;
+    background-size: cover;
     color: #fff;
 }
 
@@ -88,16 +88,11 @@ p {
     opacity: 0.7;
 }
 
-.my_hero .hero_right { 
-    margin-top: 60px; 
-    margin-bottom: 60px;  
-    padding-top: 15px;
-    padding-bottom: 30px;
+.my_hero .hero_right {
+    margin-bottom: 60px; 
+    padding: 15px 15px 30px;
     border-radius: 5px;
     background-color: #fff;    
-}
-.my_hero .hero_left { 
-    transform: translateY(13%);
 }
 
 .my_hero form {
@@ -137,17 +132,42 @@ p {
 
 /* media queries */
 
-@media (max-width: 1199px) {
+
+@media (min-width: 768px) {
+
+    #hero_left_box {
+    position: relative;
+    height: 505px;
+    } 
+    
+    .my_hero .hero_left {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .my_hero .hero_right {
+        margin-top: 60px; 
+    }
+
+}
+
+@media (min-width: 1200px) {
 
     h1, .h1 {
-        font-size: 4rem;
+        font-size: 6.5rem;
         font-weight: 700;
     }
 
     #my_logo_box img {
-        transform: translateY(-15%)
+    transform: translateY(18%);
     }
 
+}
+
+
+@media (max-width: 1199px) {
+    
     /* nav collapse under 1199px */
     .navbar-header {
         float: none;
