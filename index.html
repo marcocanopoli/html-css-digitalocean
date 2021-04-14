@@ -15,27 +15,31 @@
 
         <!-- header -->
         <header>
-
             <!-- navbar fixed -->
             <nav id="my_header_navbar" class="navbar navbar-default">
                 <div class="container">
 
+                    <!-- logo and toggle options -->
                     <div id="my_logo_box" class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my_navbar_links_collapse" aria-expanded="false">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
                         </button>
+
+                        <!-- logo -->
                         <a class="navbar-brand" href="#">
                             <img src="img/logo.png" alt="DigitalOcean Logo">
                         </a>
+                        <!-- /logo -->
                     </div>
-                
+                    <!-- /logo and toggle options -->
+                    
                     <!-- Links collected for toggling -->
-                    <div class="collapse navbar-collapse">
+                    <div class="collapse navbar-collapse" id="my_navbar_links_collapse">
                         <ul class="nav navbar-nav">
                             <!-- nav item -->
-                            <li class="dropdown">                          
+                            <li class="dropdown">                   
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products
                                     <i class="fas fa-chevron-down"></i>
                                 </a>
@@ -139,7 +143,7 @@
                                     </form>
                                     <!-- /registration form -->
     
-                                    <span class="color_darkblue">By signing up you agree to the <a class="color_blue" href="#">Terms of Service.</a></span>
+                                    <span class="color_darkblue">By signing up you agree to the <a class="color_blue" href="#">Terms of Service</a>.</span>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +188,68 @@
             <!-- /partners banner -->
         </header>
         <!-- /header -->
+            <section class="deployment">
+                <div class="container">
+                    <h2 class="text-center">Deploy and scale seamlessly</h2>
+                    <p class="deployment_p text-center">Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-offset-1 col-sm-3">
+                            <ul class="deployment_steps">
+                                <li>
+                                    <span>Deploy</span>
+                                </li>
+                                <li>
+                                    <span>Manage</span>
+                                </li>
+                                <li>
+                                    <span>Secure</span>
+                                </li>
+                                <li>
+                                    <span>Scale</span>
+                                </li>
+                                <li>
+                                    <span>Monitor</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-7">
+                            <div class="row">
+                                <!-- deployment item -->
+                                <div class="deployment_item col-xs-12 col-sm-6">
+                                    <img src="img/cluster-deploy.svg" alt="cluster deployment">
+                                    <h5>Cluster deployments</h5>
+                                    <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+                                </div>
+                                <!-- /deployment item -->
 
+                                <!-- deployment item -->
+                                <div class="deployment_item col-xs-12 col-sm-6">
+                                    <img src="img/optimized-compute.svg" alt="optimized compute types">
+                                    <h5>Optimized compute types</h5>
+                                    <p>Get the compute resource you need with Standard or Optimized Droplets.</p>
+                                </div>
+                                <!-- /deployment item -->
+
+                                <!-- deployment item -->
+                                <div class="deployment_item col-xs-12 col-sm-6">
+                                    <img src="img/one-click.svg" alt="one click apps">
+                                    <h5>One-click apps</h5>
+                                    <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker and more.</p>
+                                </div>
+                                <!-- /deployment item -->
+
+                                <!-- deployment item -->
+                                <div class="deployment_item col-xs-12 col-sm-6">
+                                    <img src="img/global.svg" alt="global availability">
+                                    <h5>Global availability</h5>
+                                    <p>Deploy to any of our data center regions around the world.</p>
+                                </div>
+                                <!-- /deployment item -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         <!-- main -->
         <main>
 
