@@ -2,6 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+    color: #011d4c;
 }
 
 h1, .h1 {
@@ -16,14 +17,14 @@ h3, .h3 {
     font-size: 2rem;
     font-weight: 500;
     line-height: 1.3em;
-    color: #031c4e;
+    color: #011d4c;
 }
 h5, .h5 {
     font-size: 1.5rem; 
 }
 p {
-    font-size: 1.7rem;
-    color: #65738f;
+    font-size: 1.2rem;
+    color: #65738f
 }
 
 /* colors */
@@ -31,7 +32,7 @@ p {
     color: #006aff;
 }
 .color_darkblue {
-    color: #031c4e;
+    color: #011d4c;
 }
 
 /* buttons */
@@ -40,6 +41,16 @@ p {
     background-color: #fff;
     border: 1px solid #006aff;
     transition: .3s;
+}
+
+/* section title*/
+.section_title {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 75px;
+}
+.section_title p {
+    font-size: 1.7rem;
 }
 
 /* header */
@@ -74,7 +85,7 @@ p {
     vertical-align: middle;
     padding: 10px;
     font-size: 1.75rem;  
-    color: #031c4e;
+    color: #011d4c;
 }
 #my_header_navbar .navbar-nav > li > a:not(.btn) {
     padding-top: 15px;
@@ -124,6 +135,7 @@ p {
     background-color: #fff;    
 }
 .my_hero p {
+    font-size: 1.7rem;    
     color: #fff;
     opacity: 0.8;
 }
@@ -187,14 +199,12 @@ p {
 }
 .partner_logo_box img {
     width: 90%;
+    max-height: 100px;
 }
 
 /* deployment section */
 .deployment {
-    padding: 45px 0;
-}
-.deployment_p {
-    margin-bottom: 60px;
+    padding-bottom: 45px;
 }
 
 .deployment_steps {
@@ -215,8 +225,64 @@ p {
     height: 35px;
     margin-bottom: 15px;
 }
-.deployment_item p {
-    font-size: 1.2rem;
+
+/* gallery section */
+.my_gallery {
+    padding-bottom: 45px;
+    background-color: #f3f5f9;
+}
+
+.my_gallery h2 {
+    margin-top: 30px;
+}
+
+/* slider */
+.my_slider {
+    padding: 60px 60px 0;
+}
+.my_slider img {
+    margin-bottom: 15px;
+    width: 100%;
+}
+.my_slider figcaption {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.my_slider .arrow_box {
+    padding: 0;
+    vertical-align: middle;
+}
+
+.my_slider .arrow_box i {
+    font-size: 5rem;
+    color: #6f7b97;
+    cursor: pointer;
+}
+.my_slider .arrow_box i:hover,
+.my_slider .arrow_box i:active {
+    color: #011d4c;
+}
+
+/* slider selector */
+.my_slider .selector {
+    margin-top: 60px;
+}
+.my_slider .selector li {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 1px;
+    border: 1px solid #006aff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.my_slider .selector li:first-child {
+    background-color: #006aff;
+    border: 1px solid #006aff;
+}
+.my_slider .selector li:hover{
+    background-color: #579aff;
 }
 
 /* media queries */
@@ -240,6 +306,10 @@ p {
         font-size: 2rem;
     }
     p {
+        font-size: 2.3rem;
+    }
+
+    .section_title p {
         font-size: 2.3rem;
     }
 
@@ -300,9 +370,55 @@ p {
         font-size: 1.7rem;
         line-height: 1.25;
     }
-    
+
+    /* gallery section*/
+    .my_gallery {
+        padding-bottom: 60px;
+    }
+    .my_gallery .section_title h2 {
+        margin-bottom: 30px;
+    }
+
+    .my_slider {
+        padding-top: 90px;
+    }
+    .my_slider .img_box,
+    .my_slider .arrow_box {
+        height: 300px;    
+    }
+    .my_slider .arrow_box {
+        line-height: 300px;
+    }
+    .my_slider figcaption {
+        font-size: 1.7rem;
+    }
+
 }
 
+/* tablet landscape  */
+@media (min-width: 992px) {
+
+    /* slider */
+    .my_slider {
+        padding-top: 0px;
+    } 
+    .my_slider .img_box,
+    .my_slider .arrow_box {
+        height: 400px;    
+    }
+    .my_slider .arrow_box {
+        line-height: 400px;
+    }
+
+    .my_slider .selector {
+        margin-top: 0px;
+    }
+    .my_slider .selector li {
+        height: 13px;
+        width: 13px;
+    }    
+
+}
 /* desktop  */
 @media (min-width: 1200px) {
 
@@ -317,6 +433,11 @@ p {
 
     p {
         font-size: 2.4rem;
+    }
+
+    /* section title */
+    .section_title p {
+        font-size: 2.3rem;
     }
 
     /* navbar */
@@ -363,10 +484,20 @@ p {
     /* deployment section */
     .deployment_item {
         height: 200px;
-    }
+    }    
 
-    .deployment_p {
-        font-size: 2.3rem;
+    /* gallery section */
+    
+    /* slider */
+    .my_slider .img_box,
+    .my_slider .arrow_box {
+        height: 475px;    
+    }
+    .my_slider .arrow_box {
+        line-height: 475px;
+    }
+    .my_slider .selector {
+        padding-top: 15px;
     }
 
 }
