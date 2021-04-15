@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh5u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">    
@@ -12,15 +12,14 @@
         <title>DigitalOcean</title>
     </head>
     <body>
-
         <!-- header -->
         <header>
             <!-- navbar fixed -->
-            <nav id="my_header_navbar" class="navbar navbar-default navbar-fixed-top">
+            <nav class= "my_header_navbar navbar navbar-default navbar-fixed-top">
                 <div class="container">
 
                     <!-- logo and toggle options -->
-                    <div id="my_logo_box" class="navbar-header">
+                    <div id="my_nav_logo" class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my_navbar_links_collapse" aria-expanded="false">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -155,7 +154,7 @@
             <!-- partners banner -->
             <section class="partners">
                 <div class="container">
-                    <h4 class="text-uppercase  text-center">Innovative business trust digitalocean</h4>
+                    <h5 class="text-uppercase  text-center">Innovative business trust digitalocean</h5>
                     <div class="row">
                         <div class="partner_logo_box col-xs-6 col-sm-2">
                             <img src="img/docker.svg" alt="Docker logo">
@@ -203,19 +202,19 @@
                         <div class="col-xs-12 col-sm-offset-1 col-sm-3">
                             <ul class="deployment_steps">
                                 <li>
-                                    <span>Deploy</span>
+                                    <a href="#">Deploy</a>
                                 </li>
                                 <li>
-                                    <span>Manage</span>
+                                    <a href="#">Manage</a>
                                 </li>
                                 <li>
-                                    <span>Secure</span>
+                                    <a href="#">Secure</a>
                                 </li>
                                 <li>
-                                    <span>Scale</span>
+                                    <a href="#">Scale</a>
                                 </li>
                                 <li>
-                                    <span>Monitor</span>
+                                    <a href="#">Monitor</a>
                                 </li>
                             </ul>
                         </div>
@@ -224,7 +223,7 @@
                                 <!-- deployment item -->
                                 <div class="deployment_item col-xs-12 col-sm-6">
                                     <img src="img/cluster-deploy.svg" alt="cluster deployment">
-                                    <h5>Cluster deployments</h5>
+                                    <h4>Cluster deployments</h4>
                                     <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
                                 </div>
                                 <!-- /deployment item -->
@@ -232,7 +231,7 @@
                                 <!-- deployment item -->
                                 <div class="deployment_item col-xs-12 col-sm-6">
                                     <img src="img/optimized-compute.svg" alt="optimized compute types">
-                                    <h5>Optimized compute types</h5>
+                                    <h4>Optimized compute types</h4>
                                     <p>Get the compute resource you need with Standard or Optimized Droplets.</p>
                                 </div>
                                 <!-- /deployment item -->
@@ -240,7 +239,7 @@
                                 <!-- deployment item -->
                                 <div class="deployment_item col-xs-12 col-sm-6">
                                     <img src="img/one-click.svg" alt="one click apps">
-                                    <h5>One-click apps</h5>
+                                    <h4>One-click apps</h4>
                                     <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker and more.</p>
                                 </div>
                                 <!-- /deployment item -->
@@ -248,7 +247,7 @@
                                 <!-- deployment item -->
                                 <div class="deployment_item col-xs-12 col-sm-6">
                                     <img src="img/global.svg" alt="global availability">
-                                    <h5>Global availability</h5>
+                                    <h4>Global availability</h4>
                                     <p>Deploy to any of our data center regions around the world.</p>
                                 </div>
                                 <!-- /deployment item -->
@@ -313,7 +312,7 @@
                         <!-- features item -->
                         <div class="features_item col-xs-12 col-sm-4">
                             <img src="img/pred-pricing.svg" alt="Predictable pricing">
-                            <h5>Predictable pricing</h5>
+                            <h4>Predictable pricing</h4>
                             <p>Leave complex pricing structures behind. Always know what you'll pay per month with a flat, industry-leading pricing structure.</p>
                             <a class="color_blue" href="#">Pricing &gt;</a>
                         </div>
@@ -322,7 +321,7 @@
                         <!-- features item -->
                         <div class="features_item col-xs-12 col-sm-4">
                             <img src="img/world-class.svg" alt="World class service">
-                            <h5>World class service</h5>
+                            <h4>World class service</h4>
                             <p>Free round-the-clock technical support for all customers. You'll feel the love.</p>
                             <a class="color_blue" href="#">Support &gt;</a>
                         </div>
@@ -331,7 +330,7 @@
                         <!-- features item -->
                         <div class="features_item col-xs-12 col-sm-4">
                             <img src="img/reliable-platform.svg" alt="Reliable platform">
-                            <h5>Reliable platform</h5>
+                            <h4>Reliable platform</h4>
                             <p>More then 100,000 developer teams worldwide trust DigitalOcean to support their business with 99.99% uptime SLA for all services.</p>
                             <a class="color_blue" href="#">Security &gt;</a>
                         </div>
@@ -627,7 +626,7 @@
                             </ul>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-lg-2">
-                            <h5>Company</h5>
+                            <h4>Company</h4>
                             <ul>
                                 <li>
                                     <a href="#">About</a>
@@ -662,7 +661,7 @@
                             </ul>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-lg-2">
-                            <h5>Products</h5>
+                            <h4>Products</h4>
                             <ul>
                                 <li>
                                     <a href="#">Droplets</a>
@@ -700,7 +699,7 @@
                             </ul>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-lg-2">
-                            <h5>Community</h5>
+                            <h4>Community</h4>
                             <ul>
                                 <li>
                                     <a href="#">Tutorials</a>
@@ -735,7 +734,7 @@
                             </ul>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-lg-2">
-                            <h5>Support</h5>
+                            <h4>Support</h4>
                             <ul>
                                 <li>
                                     <a href="#">Contact Support</a>
