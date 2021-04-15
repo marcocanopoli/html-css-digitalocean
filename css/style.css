@@ -525,17 +525,25 @@ a:not(.btn):hover {
     h4 {
         font-size: 2rem;
     }
-    h4 {
-        font-size: 1.75rem;
+    h5 {
+        font-size: 1.6rem;
     }
     p {
-        font-size: 2.3rem;
+        font-size: 1.65rem;
+    }
+
+    .section_title p {
+        font-size: 2.2rem;
     }
 
     /* navbar */
     #my_nav_logo img { 
         height: 35px;       
         margin-right: 60px;
+    }
+
+    .my_header_navbar .navbar-toggle {
+        margin-right: 0;
     }
 
     /* hero */        
@@ -549,9 +557,13 @@ a:not(.btn):hover {
         transform: translateY(-50%);
     }
     #hero_left_box {
-    position: relative;
-    height: 505px;
+        position: relative;
+        height: 505px;
     } 
+
+    .my_hero p {
+        font-size: 2.2rem; 
+    }
 
     /* partners section */
     .partners {
@@ -572,6 +584,8 @@ a:not(.btn):hover {
     /* deployment section */
     .deployment_steps li {
         padding: 10px;
+    }
+    .deployment_steps li a {
         font-size: 2rem;
     }
 
@@ -585,8 +599,7 @@ a:not(.btn):hover {
         padding: 5px 0;
     }
     .deployment_item p {
-        font-size: 1.75rem;
-        line-height: 1.25;
+        line-height: 1.4;
     }
 
     /* gallery section*/
@@ -608,7 +621,7 @@ a:not(.btn):hover {
         line-height: 300px;
     }
     .my_gallery .my_slider figcaption {
-        font-size: 1.75rem;
+        font-size: 1.65rem;
     }
 
     /* features section */
@@ -622,33 +635,39 @@ a:not(.btn):hover {
         height: 40px;
     }
     .features_item p {
-        font-size: 1.75rem;
-        line-height: 1.25;
+        line-height: 1.4;
     }
 
-    /* regions section */    
+    /* regions section */  
+    .regions {
+        padding-bottom: 75px;
+    }
+    
     .region_item {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     /* testimonials section */ 
+    .testimonials .section_title {
+        margin: 75px 0;
+    }
     .testimonials .my_slider {
         padding-top: 30px;
     }
     .testimonials .my_slider .arrow_box {
         line-height: 370px;
     }
-    .testimonials .my_slider p {
-        font-size: 2.4rem;
-    }
-
-    .testimonial_box {
+    .my_slider .testimonial_box {
         height: 370px;
     }
-    .testimonial_box span,
-    .testimonial_box a {
-        font-size: 1.75rem;
+    .my_slider .testimonial_box p {
+        font-size: 2.4rem;
     }
+    .my_slider .testimonial_box span,
+    .my_slider .testimonial_box a {
+        font-size: 1.6rem;
+    }
+
 
     /* get started section */
     .get_started .section_title {
@@ -668,7 +687,7 @@ a:not(.btn):hover {
     }
     .my_footer span,
     .my_footer a {
-        font-size: 1.75rem;
+        font-size: 1.65rem;
     }
 
     .social_links i {
@@ -683,13 +702,6 @@ a:not(.btn):hover {
     .my_slider .my_slider_selector li {
         height: 13px;
         width: 13px;
-    }    
-    .my_slider .img_box,
-    .my_slider .arrow_box {
-        height: 400px;    
-    }
-    .my_slider .arrow_box {
-        line-height: 400px;
     }
 
     /* gallery */
@@ -700,17 +712,28 @@ a:not(.btn):hover {
         margin-top: 0px;
     }
 
+    .my_gallery .my_slider .img_box,
+    .my_gallery .my_slider .arrow_box {
+        height: 400px;    
+    }
+    .my_gallery .my_slider .arrow_box {
+        line-height: 400px;
+    }
+    
+
     /* regions */
     .regions .section_title h2 {
         font-size: 2.9rem;
     }
 
-    /* testimonials */    
-    .testimonial_box {
-        height: 400px;
-    }
+    /* testimonials */
     .testimonial_box img {
         padding: 60px 0 15px;
+    }
+
+    .testimonials .my_slider .testimonial_box,
+    .testimonials .my_slider .arrow_box {
+        height: 400px;    
     }
     .testimonials .my_slider .arrow_box {
         line-height: 400px;
@@ -720,6 +743,9 @@ a:not(.btn):hover {
 /* desktop  */
 @media (min-width: 1200px) {
 
+    body {
+        font-size: 1.3rem;
+    }
     h1 {
         font-size: 6.5rem;
         font-weight: 700;
@@ -728,7 +754,7 @@ a:not(.btn):hover {
         font-size: 4rem;
     }
     p {
-        font-size: 2.4rem;
+        font-size: 1.75rem;
     }
 
     /* section title */
@@ -756,6 +782,9 @@ a:not(.btn):hover {
         margin-bottom: 10px;
         font-size: 1.6rem;
     }
+    .my_hero p {
+        font-size: 2.4rem; 
+    }
 
     /* partners section */
     .partners {
@@ -764,9 +793,11 @@ a:not(.btn):hover {
     }
     .partners h5 {
         padding-bottom: 30px;
+        font-size: 1.75rem;
     }
     .partners a {
         margin-top: 30px;
+        font-size: 1.75rem;
     }
 
     .partner_logo_box img {
@@ -778,6 +809,10 @@ a:not(.btn):hover {
     }
 
     /* deployment section */
+    .deployment_steps li a {
+        font-size: 2.2rem;
+    }
+
     .deployment_item {
         height: 200px;
     }    
@@ -794,9 +829,20 @@ a:not(.btn):hover {
         padding-top: 15px;
     }
 
-    /* regions */
+    /* features section */
+    .features a {
+        font-size: 1.75rem;
+    }
+
+    /* regions section */
     .regions .section_title h2 {
         font-size: 3.5rem;
+    }
+
+    /* testimonials */
+    .my_slider .testimonial_box span, 
+    .my_slider .testimonial_box a {
+        font-size: 1.75rem;
     }
 
     /* get started section */
@@ -807,11 +853,14 @@ a:not(.btn):hover {
     /* footer */
     .my_footer span,
     .my_footer a {
-        font-size: 2rem;
+        font-size: 1.75rem;
+    }
+    .my_footer a {
+        font-weight: 500;
     }
 
     .social_links i {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
 }
