@@ -1,5 +1,6 @@
 /* common */
 body {
+    margin-top: 70.5px;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     color: #011d4c;
@@ -130,8 +131,9 @@ p {
 #my_header_navbar {
     margin: 0;
     min-height: 70px;
-    background-color: #fff;
     border: none;
+    background-color: #fff;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
 }
 #my_header_navbar .navbar-toggle {
     position: absolute;
